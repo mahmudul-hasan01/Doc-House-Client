@@ -1,9 +1,11 @@
-import image from '../../../assets/dreamstime_xxl_22167629-scaled.jpg'
+import image from '../../../assets/1600w-Hg-PC-RqSxU.webp'
+
 const Banner = () => {
     return (
-        <div>
-            <img className='h-[550px] w-full' src={image} alt="" />
+        <div  className='w-full h-screen bg-cover' style={{backgroundImage:`url(${image})`}}>
+           
         </div>
+
     );
 };
 

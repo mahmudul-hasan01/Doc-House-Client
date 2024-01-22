@@ -6,7 +6,7 @@ export const navLink = <>
         className={({ isActive, isPending, isTransitioning }) =>
             [
                 isPending ? "pending" : "",
-                isActive ? "active" : "",
+                isActive ? "text-[#F7A582] underline" : "",
                 isTransitioning ? "transitioning" : "",
             ].join(" ")
         }
@@ -18,7 +18,7 @@ export const navLink = <>
         className={({ isActive, isPending, isTransitioning }) =>
             [
                 isPending ? "pending" : "",
-                isActive ? "active" : "",
+                isActive ? "text-[#F7A582] underline" : "",
                 isTransitioning ? "transitioning" : "",
             ].join(" ")
         }
@@ -30,7 +30,7 @@ export const navLink = <>
         className={({ isActive, isPending, isTransitioning }) =>
             [
                 isPending ? "pending" : "",
-                isActive ? "active" : "",
+                isActive ? "text-[#F7A582] underline" : "",
                 isTransitioning ? "transitioning" : "",
             ].join(" ")
         }
@@ -42,7 +42,7 @@ export const navLink = <>
         className={({ isActive, isPending, isTransitioning }) =>
             [
                 isPending ? "pending" : "",
-                isActive ? "active" : "",
+                isActive ? "text-[#F7A582] underline" : "",
                 isTransitioning ? "transitioning" : "",
             ].join(" ")
         }
