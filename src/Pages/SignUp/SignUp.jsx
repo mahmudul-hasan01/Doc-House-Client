@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import image from '../../assets/docter-illustrations-331199.jpg'
 import useAuth from '../../Hooks/useAuth';
+import toast from 'react-hot-toast';
+
 
 const SignUp = () => {
-
+    
     const {signUp,signIn,loading} = useAuth()
 
     const handleSignUp =async (e) => {
@@ -13,8 +15,9 @@ const SignUp = () => {
         const userName = form.UserName.value
         const email= form.Email.value
         const password= form.Password.value
-        const data = await signUp(email,password)
-        console.log(data)
+        await signUp(email,password)
+        toast.success('SignUp Successfully')
+
     }
     return (
         <div>
