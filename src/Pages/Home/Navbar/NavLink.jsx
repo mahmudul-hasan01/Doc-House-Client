@@ -38,6 +38,18 @@ export const navLink = <>
         Appointment
     </NavLink>
     <NavLink
+        to="/Dashboard"
+        className={({ isActive, isPending, isTransitioning }) =>
+            [
+                isPending ? "pending" : "",
+                isActive ? "text-[#F7A582] underline" : "",
+                isTransitioning ? "transitioning" : "",
+            ].join(" ")
+        }
+    >
+        Dashboard
+    </NavLink>
+    <NavLink
         to="/Login"
         className={({ isActive, isPending, isTransitioning }) =>
             [
@@ -49,4 +61,5 @@ export const navLink = <>
     >
         Login
     </NavLink>
+    
 </>
